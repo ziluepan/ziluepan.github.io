@@ -8,7 +8,7 @@ date: 2023-09-07
 
 ## 一、赛博善人：
 
-1. [github](https://github.com/){:target="_blank"}
+1. [github](https://github.com/)
 2. [cloudflare](https://www.cloudflare.com/){:target="_blank"}
 3. [youtube](https://youtube.com/){:target="_blank"}
 
