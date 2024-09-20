@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://ziluepan.github.io/"
+baseurl = "https://www.uder.rocks/"
 languageCode = "en-us"
 title = "英雄不朽"
 
