@@ -1,3 +1,4 @@
+---
 title: 通过cname优选域名/IP接入cloudflare
 description: Welcome to Hugo Theme Stack
 date: 2022-03-06 00:00:00+0000
@@ -7,6 +8,8 @@ categories:
 tags:
     - Example Tag
 weight: 3 
+---
+
 # 通过cname优选域名/IP接入cloudflare
 
 ![图片1](https://p0.meituan.net/csc/2257cd91224cde5cffeea45da40423394062.png)
