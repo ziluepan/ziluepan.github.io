@@ -1,6 +1,5 @@
 ---
 title: cloudflare
-image:
 
 # Badge style
 style:
