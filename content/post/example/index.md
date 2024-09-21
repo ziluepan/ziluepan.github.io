@@ -1,7 +1,7 @@
 ---
 title: 示例
 description: md使用示例
-slug: 示例
+slug: md-example
 date: 2024-09-18 19:35:00+0000
 categories:
     - 使用教程
