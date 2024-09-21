@@ -1,6 +1,7 @@
 title: 通过cname优选域名/IP接入cloudflare
 description: Welcome to Hugo Theme Stack
-slug: hello-world
+date: 2022-03-06 00:00:00+0000
+slug: 通过cname优选域名或ip接入cloudflare
 categories:
     - Example Category
 tags:
