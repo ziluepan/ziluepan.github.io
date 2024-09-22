@@ -22,3 +22,11 @@ url = "https://twitter.com"
 
 [social.params]
 icon = "brand-twitter"
+
+[[social]]
+identifier = "Docs"
+name = "docs"
+url = "https://stack.jimmycai.com/config/"
+
+[social.params]
+icon = "categories"
