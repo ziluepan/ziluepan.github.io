@@ -16,17 +16,17 @@ url = "https://github.com/ziluepan/ziluepan.github.io"
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
-
-[social.params]
-icon = "brand-twitter"
-
-[[social]]
 identifier = "Docs"
 name = "docs"
 url = "https://stack.jimmycai.com/config/"
 
 [social.params]
-icon = "categories"
+icon = "anchor"
+
+[[social]]
+identifier = "Stars"
+name = "stars"
+url = "https://www.ificould.xyz"
+
+[social.params]
+icon = "stars"
