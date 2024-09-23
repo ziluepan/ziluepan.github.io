@@ -2,6 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
+description = "'PZL VIP BLOG' 已经被 Github 收录，并备份保存在北极地下250米深的代码库中，备份会保留1000年。"
 favicon = "/favicon.png"
 
 [footer]
