@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>英雄不朽</title><link>https://www.uder.rocks/</link><description>Recent content on 英雄不朽</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.uder.rocks/index.xml" rel="self" type="application/rss+xml"/><item><title>示例</title><link>https://www.uder.rocks/p/md-example/</link><pubDate>Wed, 18 Sep 2024 19:35:00 +0000</pubDate><guid>https://www.uder.rocks/p/md-example/</guid><description>&lt;h1 id="一级标题">一级标题
+&lt;/h1>&lt;h2 id="二级标题">二级标题
+&lt;/h2>&lt;p>##二级标题&lt;/p>
+&lt;h3 id="三级标题">三级标题
+&lt;/h3>&lt;p>###三级标题&lt;/p>
+&lt;blockquote>
+&lt;p>大于符号 引用&lt;/p>
+&lt;blockquote>
+&lt;p>继续大于哈哈
+王非王，侯非侯&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h3 id="有序列表">有序列表
+&lt;/h3>&lt;p>把大象放进冰箱：&lt;/p>
+&lt;ol>
+&lt;li>打开冰箱&lt;/li>
+&lt;li>把大象放进去&lt;/li>
+&lt;li>关上冰箱&lt;/li>
+&lt;/ol>
+&lt;h3 id="无序列表">无序列表
+&lt;/h3>&lt;ul>
+&lt;li>短横线&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>星号也行，但是不推荐，因为它会自动两个&lt;/li>
+&lt;/ul>
+&lt;h3 id="取消列表的方式">取消列表的方式
+&lt;/h3>&lt;ol>
+&lt;li>回车 * 2&lt;/li>
+&lt;li>或者回车后backback后退键(不推荐)&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务列表">任务列表
+&lt;/h3>&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> -+空格+方括号+空格(字母x表示勾选上)+方括号+空格&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 吃饭&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 睡觉&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 打豆豆&lt;/li>
+&lt;/ul>
+&lt;h3 id="代码块">代码块
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c" data-lang="c">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="脚注">脚注
+&lt;/h3>&lt;p>一键三连&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h3 id="上标-下标-高亮">上标 下标 高亮
+&lt;/h3>&lt;p>x^2^ H&lt;del>2&lt;/del>O ==高亮== &lt;strong>加粗&lt;/strong>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=5388716f2ab2526f717f64cb6cb9230d&amp;bvid=BV1WigMemEqi"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/dLDn_k8GmaU"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;iframe src="//player.bilibili.com/player.html?aid=327623069&amp;bvid=BV1JA411h7Gw&amp;cid=171385214&amp;p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> &lt;/iframe>
+&lt;hr>
+&lt;p>&lt;a class="link" href="baidu.com" title="The best search engine for privacy"
+>百度&lt;/a>
+&amp;lt;baidu.com&amp;gt;
+&lt;a class="link" href="#%e4%b8%89%e7%ba%a7%e6%a0%87%e9%a2%98" >标题&lt;/a>
+[百度][id]
+[id]: baidu.com&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>点赞、投币、收藏&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>使用 Cloudflare 在 Gmail 上配置域名邮箱</title><link>https://www.uder.rocks/p/domain-name-email/</link><pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/p/domain-name-email/</guid><description>&lt;p>使用 Cloudflare 在 Gmail 上配置域名邮箱 | 叶子的花园&lt;/p>
+&lt;p>&lt;a class="link" href="https://mskclover.com/about/" title="叶子"
+target="_blank" rel="noopener"
+>🥬&lt;/a>&lt;a class="link" href="https://www.uder.rocks/about/" >叶子&lt;/a>&lt;a class="link" href="https://mskclover.com/about/site.html" target="_blank" rel="noopener"
+>叶子的花园&lt;/a>靡不有初，鲜克有终@Misaka-Clover&lt;a class="link" href="https://www.uder.rocks/archives/" title="归档"
+>51&lt;/a>&lt;a class="link" href="https://www.uder.rocks/categories/" title="分类"
+>10&lt;/a>&lt;a class="link" href="https://www.uder.rocks/tags/" title="标签"
+>126&lt;/a>&lt;/p>
+&lt;hr>
+&lt;hr>
+&lt;ol>
+&lt;li>&lt;a class="link" href="#%E5%89%8D%E8%A8%80" >1. 前言&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%E9%80%89%E6%8B%A9-Cloudflare-%E4%BD%9C%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D%E6%89%98%E7%AE%A1%E5%95%86" >2. 选择 Cloudflare 作为自己的域名托管商&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%E8%AE%BE%E7%BD%AE-Cloudflare-Email-Routing-%E8%B7%AF%E7%94%B1%E8%A7%84%E5%88%99" >3. 设置 Cloudflare Email Routing 路由规则&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%E6%B7%BB%E5%8A%A0-Cloudflare-%E7%9A%84-MX-%E8%AE%B0%E5%BD%95" >4. 添加 Cloudflare 的 MX 记录&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%E9%85%8D%E7%BD%AE-Gmail-%E4%BB%A5%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1%E7%9A%84%E5%90%8D%E4%B9%89%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6" >5. 配置 Gmail 以域名邮箱的名义发送邮件&lt;/a>
+&lt;ol>
+&lt;li>&lt;a class="link" href="#%E8%8E%B7%E5%8F%96%E8%B0%B7%E6%AD%8C%E8%B4%A6%E6%88%B7%E7%9A%84%E4%B8%93%E5%B1%9E%E5%BA%94%E7%94%A8%E5%AF%86%E7%A0%81" >5.1. 获取谷歌账户的专属应用密码&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#%E9%85%8D%E7%BD%AE-Gmail-%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E5%9C%B0%E5%9D%80" >5.2. 配置 Gmail 发送邮件地址&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h1 id="使用-cloudflare-在-gmail-上配置域名邮箱">使用 Cloudflare 在 Gmail 上配置域名邮箱
+&lt;/h1>&lt;p>发表于 2024-07-31- 更新于 2024-09-22 1.5k- 5m &lt;a class="link" href="https://www.uder.rocks/categories/%E5%8F%B6%E5%AD%90%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/" >叶子的小知识&lt;/a>-&lt;a class="link" href="https://www.uder.rocks/tags/%E5%8D%9A%E6%96%87/" >博文&lt;/a>&lt;a class="link" href="https://www.uder.rocks/tags/Cloudflare/" >Cloudflare&lt;/a>&lt;a class="link" href="https://www.uder.rocks/tags/%E5%9F%9F%E5%90%8D%E9%82%AE%E7%AE%B1/" >域名邮箱&lt;/a>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/cover.jpg"
+loading="lazy"
+alt="cover"
+>&lt;/p>
+&lt;h2 id="前言">前言
+&lt;/h2>&lt;p>在去年初，我在&lt;a class="link" href="https://mskclover.com/2023/04/09/2023-04-Week-14/" target="_blank" rel="noopener"
+>这篇周记&lt;/a>里讲我配置了「域名邮箱的接收」，但是因为我犯懒，就一直没有配置其发送。最近看到一个关注许久的博客出了问题，无法留言，就趁此机会把**「域名邮箱的发送」**配置啦。本篇文章的所有配置步骤，均参考 &lt;strong>数字游民&lt;/strong> 的这篇教程：&lt;a class="link" href="https://blog.shuziyimin.org/1355#comment-8798/" target="_blank" rel="noopener"
+>如何使用 Cloudflare 配置域名邮箱收发邮件&lt;/a>（备份 &lt;a class="link" href="https://web.archive.org/web/20240916150632/https://blog.shuziyimin.org/1355#comment-8798/" target="_blank" rel="noopener"
+>于此&lt;/a>），并根据自己的经历作了一点小小的修改。&lt;/p>
+&lt;p>整个步骤大体上可以分为两个部分：&lt;/p>
+&lt;ul>
+&lt;li>配置域名邮箱接收邮件，并转发到自己的邮箱（如 Gmail）；&lt;/li>
+&lt;li>配置域名邮箱发送邮件，该功能依托其他大型邮件服务商（如 Gmail）。&lt;/li>
+&lt;/ul>
+&lt;h2 id="选择-cloudflare-作为自己的域名托管商">选择 Cloudflare 作为自己的域名托管商
+&lt;/h2>&lt;p>在我之前的文章里，有说过为什么选择 &lt;strong>Cloudflare&lt;/strong> 作为我的域名托管商。最初我的域名是托管在 &lt;strong>&lt;a class="link" href="https://www.namecheap.com/" target="_blank" rel="noopener"
+>Namecheap&lt;/a>&lt;/strong> 上的，不过由于首年便宜，续费太贵的缘故，我就将域名转移到了 Cloudflare 上了 —— 这是偷偷摸摸做的，那时忙着做实验室的项目，所以忘记写一篇博文来纪念一下了，好遗憾的。Cloudflare 在&lt;a class="link" href="https://blog.cloudflare.com/cloudflare-registrar/" target="_blank" rel="noopener"
+>这篇博客&lt;/a>里说过他们&lt;strong>为什么&lt;/strong>会开始自己做域名服务的托管，也说了他们为什么&lt;strong>不会&lt;/strong>像其他公司一样将&lt;strong>续费价格翻好几倍&lt;/strong>，当然也说了他们为什么承诺为每一位用户提供 &lt;strong>免费 SSL&lt;/strong> 等服务。我真的好感动，Cloudflare 为大家创造了一个更好的互联网，难怪许多人都愿意尊称他们为**「赛博佛祖」**。&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/registrar-pricing.jpg"
+loading="lazy"
+alt="registrar-pricing"
+>&lt;em>Cloudflare 所列出的顶级域名收费明细&lt;/em>&lt;/p>
+&lt;p>如果自己有域名，需要将其转移到 Cloudflare 上托管。如果没有域名，那直接在 Cloudflare 上注册一个也未尝不可。&lt;/p>
+&lt;h2 id="设置-cloudflare-email-routing-路由规则">设置 Cloudflare Email Routing 路由规则
+&lt;/h2>&lt;p>登陆 Cloudflare 的 &lt;strong>dash/控制台&lt;/strong> 页面，其左栏应有 &lt;strong>Email/电子邮件&lt;/strong> 一项，在下拉列表的 &lt;strong>电子邮件路由 — 路由规则&lt;/strong> 处有：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/catch-all.jpg"
+loading="lazy"
+alt="catch-all"
+>&lt;/p>
+&lt;p>可以打开该功能，会使得所有发给你域名的邮件都会应用后续规则，也就是都会转发到你指定的目标邮箱。该功能是可选项，非必须。我参考的教程上，有这样写道：&lt;/p>
+&lt;blockquote>
+&lt;p>比较在乎隐私保护的朋友可以使用这个服务，比如在注册各种网站服务时用服务名称临时编个前缀，注册 craft 时就用 &lt;a class="link" href="https://www.uder.rocks/cdn-cgi/l/email-protection#e8cecb90dedbd3cecb90dfdad3cecbd1dfd3cecb90deded3cecb90dfdcd3cecbdedcd3cecb90deddd3cecb90dfd0d3cecb90ded9d3cecbd9d8d1d3cecb90dfd8d3cecb90de8bd3cecb90deddd3cecbdcded3cecb90dedbd3cecb90de8ed3cecb90de8cd3" >craft@example.com&lt;/a>；注册 disney+ 时就用 &lt;a class="link" href="https://www.uder.rocks/cdn-cgi/l/email-protection#b89e9bc08e8c839e9bc08e81839e9bc08f8b839e9b898988839e9bc08e8d839e9b898a89839e9bc08c88839e9bc08e8d839e9bc08f80839e9bc08e89839e9b898881839e9b89898a839e9b898880839e9b898889839e9b8c8e839e9bc08e8b839e9b898989839e9bc08edc83" >disney@example.com&lt;/a>。 这样收到垃圾邮件时，可以知道是哪家服务商把你的信息泄露了，也可以根据收件人来拒收邮件。&lt;/p>
+&lt;/blockquote>
+&lt;p>而在页面下方有：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/creat-email.jpg"
+loading="lazy"
+alt="creat-email"
+>&lt;/p>
+&lt;p>可以点击右侧的 &lt;strong>创建地址&lt;/strong> 会出现：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/set-action.jpg"
+loading="lazy"
+alt="DNS"
+>
+在「自定义地址」处填入自己想要的邮箱地址，在「操作」处填入 发送到电子邮件（即转发功能），在「目标位置」填入自己的邮箱以后，我们便设置好了。接下来 Cloudflare 会给你的邮箱发送一封确认邮件，点击其中的链接即可验证身份，到此配置完毕。&lt;/p>
+&lt;h2 id="添加-cloudflare-的-mx-记录">添加 Cloudflare 的 MX 记录
+&lt;/h2>&lt;p>在配置好以上邮箱与路由规则以后，在 &lt;strong>Email/电子邮件&lt;/strong> 处点击「添加记录」，就可以将 MX 记录一键导入到 &lt;strong>DNS — 记录&lt;/strong> 中，参考类型如下：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/DNS.jpg"
+loading="lazy"
+alt="DNS"
+>&lt;/p>
+&lt;h2 id="配置-gmail-以域名邮箱的名义发送邮件">配置 Gmail 以域名邮箱的名义发送邮件
+&lt;/h2>&lt;p>我认为在网络世界中，邮箱名字链接了太多的个人信息，这也是个人隐私的一部份。所以，我想要在某些时候，以域名邮箱的名义发送邮件，比如域名邮箱接收到他人来信的时候 —— 他人发邮件给你的域名邮箱，总不好用另外一个邮箱回复别人吧（&lt;/p>
+&lt;p>下面，我继续参考上述教程，以 Gmail 为基础，配置代理域名邮箱的发送功能：&lt;/p>
+&lt;h3 id="获取谷歌账户的专属应用密码">获取谷歌账户的专属应用密码
+&lt;/h3>&lt;p>在浏览器中打开链接：&lt;a class="link" href="https://myaccount.google.com/apppasswords" target="_blank" rel="noopener"
+>https://myaccount.google.com/apppasswords&lt;/a> ：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/apppasswords.jpg"
+loading="lazy"
+alt="apppasswords"
+>&lt;em>谷歌的中文排版为什么总是喜欢逼死强迫症？&lt;/em>&lt;/p>
+&lt;p>填入一个「自定义信息」后，就会弹出窗口「系統產生的應用程式密碼」，并显示一串密码。注意：&lt;strong>一定要复制并妥善保存这个密码&lt;/strong>，因为在你点击「确认」以后，你就再也看不到这个密码了。&lt;/p>
+&lt;p>我填入的自定义信息是：Gmail-Cloudflare-mail，以供参考。&lt;/p>
+&lt;h3 id="配置-gmail-发送邮件地址">配置 Gmail 发送邮件地址
+&lt;/h3>&lt;p>登入 Gmail，在其右上角找到齿轮 &lt;strong>设置 — 查看所有設定 — 帳戶和匯入&lt;/strong>，在「選擇寄件地址」一栏找到「新增另一個電子郵件地址」：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/add-another-email.jpg"
+loading="lazy"
+alt="add-another-email"
+>&lt;/p>
+&lt;p>点击「新增另一個電子郵件地址」后，会出现弹窗：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/enter-email.jpg"
+loading="lazy"
+alt="enter-email"
+>&lt;/p>
+&lt;p>请注意：&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>邮箱名字会用于之后发邮件的默认名，会对外展示，请慎重填写；&lt;/li>
+&lt;li>域名邮箱地址，请事先在 Cloudflare 中配置此前缀域名邮箱，确认可以接收邮件。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>完成填写后，点击「下一步」：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/add-account.jpg"
+loading="lazy"
+alt="add-account"
+>&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>SMTP 需要填写 smtp.gmail.com；&lt;/li>
+&lt;li>port 端口保持默认即可，如果需要变更协议，端口需要做相应变更；&lt;/li>
+&lt;li>username 填写原本 Gmail 的用户名，即邮箱地址中除去 @gmail.com 之外的信息；&lt;/li>
+&lt;li>password 需要使用在步骤 4.1 中获取的专属应用密码；&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>如果上述步骤没有问题，成功进入下一个页面会看到：&lt;/p>
+&lt;p>&lt;img src="https://mskclover.com/images/custom-email-on-gmail-by-cloudflare/confirm.jpg"
+loading="lazy"
+alt="confirm"
+>&lt;em>因为我已经建好了域名邮箱，所以截取的是教程中的图片&lt;/em>&lt;/p>
+&lt;p>此时，Gmail 会收到一封邮件，在邮件中点击链接，或者在此输入邮件中的验证码，即可配置完成。未来在使用 Gmail 发送邮件的时候，可以在发件人处选择发送该封邮件的地址。&lt;/p>
+&lt;p>以上，希望你一切顺利 ：)&lt;/p>
+&lt;ul>
+&lt;li>**本文作者：**叶子&lt;/li>
+&lt;li>&lt;strong>本文链接：&lt;/strong>&lt;a class="link" href="https://mskclover.com/2024/07/31/custom-email-on-gmail-by-cloudflare/" title="使用 Cloudflare 在 Gmail 上配置域名邮箱"
+target="_blank" rel="noopener"
+>https://mskclover.com/2024/07/31/custom-email-on-gmail-by-cloudflare/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>CloudFlare for SaaS</title><link>https://www.uder.rocks/p/saasfallbackorigin/</link><pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/p/saasfallbackorigin/</guid><description>&lt;h1 id="通过cname优选域名ip接入cloudflare">通过cname优选域名/IP接入cloudflare
+&lt;/h1>&lt;p>&lt;img src="https://p0.meituan.net/csc/2257cd91224cde5cffeea45da40423394062.png"
+loading="lazy"
+alt="图片1"
+>&lt;/p>
+&lt;h2 id="准备">准备：
+&lt;/h2>&lt;p>一个已经修改ns接入的CF域名作为&lt;strong>承接域名&lt;/strong>，一个想用cname接入cloudflare的域名，一张外币卡/信用卡/已绑卡的PayPal（不会自动扣费），一个优选域名（优选域名的获取可以参考&lt;a class="link" href="https://blog.qmsdh.com/index.php/archives/22/" target="_blank" rel="noopener"
+>CF优选域名&lt;/a>，优选IP的获取方式可参考&lt;a class="link" href="https://blog.qmsdh.com/index.php/archives/23/" target="_blank" rel="noopener"
+>CF自选IP&lt;/a>）&lt;/p>
+&lt;h2 id="背景">背景
+&lt;/h2>&lt;p>在曾经，通过 CNAME 接入 Cloudflare 并不是一件难事。&lt;/p>
+&lt;p>通过 Cloudflare 的合作伙伴计划（Cloudflare Partner）或者 Plesk（一个非常受欢迎的网站管理面板，类似大名鼎鼎的 CPanel）面板的插件订阅，这一点可以很轻易做到。&lt;/p>
+&lt;p>从 2021 年 11 月开始，Cloudflare 禁用了 Partner 使用的 zone_setAPI 以避免滥用（因为该 API 接入不需要验证域名所有权），通过 Partner 实现 CNAME 接入的方式近乎落幕，仅剩 Plesk 空间存量的 ServerShield by Cloudflare 插件订阅能够正常接入。几个月过去了，官方也并没有对未来合作伙伴如何进行接入新域名给出任何解释。&lt;/p>
+&lt;p>截至目前，通过 CNAME 接入 Cloudflare 就只剩下了 SaaS 这一条路子。&lt;/p>
+&lt;h2 id="配置接入">配置接入
+&lt;/h2>&lt;p>打开一个域名，选择【SSL/TLS】下的【自定义主机名】，点击【启用CloudFlare for SaaS】后根据指示绑定外币卡或者PayPal，订阅CloudFlare for SaaS功能。&lt;/p>
+&lt;p>&lt;img src="https://p1.meituan.net/csc/a081ecb7f048d7b88da3405634e382cc59054.jpg"
+loading="lazy"
+alt="图片2"
+>&lt;/p>
+&lt;p>CloudFlare for SaaS订阅本身是针对整个计费账户的，所以通过Partner接入的域名出现【请联系客户成功经理以启用适用于SaaS的SSL】时，只需要选择个通过官方NS激活的域名启用订阅后即可使用。这里猜测可能是Partner接入的商务权限交给了合作伙伴，方便下放优惠和服务那些，我们绕过去就行了。&lt;/p>
+&lt;p>&lt;img src="https://p1.meituan.net/csc/93bc9e10c0633cb20ce64bddec9152e529289.jpg"
+loading="lazy"
+alt="图片3"
+>&lt;/p>
+&lt;p>激活页面中文翻译比较滞后，从英文的可以看到免费额度已经进行更新，可以放心使用。&lt;/p>
+&lt;p>&lt;img src="https://p1.meituan.net/csc/3ae5a36892ebe9589bdabc82073dd64790072.jpg"
+loading="lazy"
+alt="图片4"
+>&lt;/p>
+&lt;h2 id="设置源站">设置源站
+&lt;/h2>&lt;p>选择一个&lt;strong>承载的域名&lt;/strong>zone点进去，依然是【SSL/TLS】下的【自定义主机名】，首先要设置附加上域名的源站。在这之前要在承载的域名zone中设置一个子域名作为源站的来源，比如origin.a.com，在Partner或者官方DNS设置好它的源站（注意是是在CF里添加，和正常添加网站的流程一样）。&lt;/p>
+&lt;p>&lt;img src="https://p0.meituan.net/csc/e3f2865a9fa011ab5018a99ddfd3ef2b47908.jpg"
+loading="lazy"
+alt="图片5"
+>&lt;/p>
+&lt;p>SaaS这里的源站叫回退源（Fallback Origin），输入刚才设置的子域名并点击【Add Fallback Origin】，它会同步这个子域名设置的源站作为后续在此接入域名的源站。有些人就会问了，这样设置那不是后续SaaS添加的所有其他域名就只能用同一个源站了？答案确实是这样，为每个SaaS域名自定义源站需要Enterprise以上套餐，有多域名需求多开几个zone吧。&lt;/p>
+&lt;p>&lt;img src="https://p0.meituan.net/csc/b3debe06748cc0ce279e5b31828dea8238662.jpg"
+loading="lazy"
+alt="图片6"
+>&lt;/p>
+&lt;h2 id="添加自定义主机名">添加自定义主机名
+&lt;/h2>&lt;p>后续的工作就很简单了，点击【添加自定义主机名】，输入你要添加的未在CF接入的子域名。建议直接选择TXT验证，因为除了证书还有另一条TXT记录要添加，一起加上去比较方便。&lt;/p>
+&lt;p>&lt;img src="https://p0.meituan.net/csc/4639b7887d1e6d32867e03d5d347aa5730776.jpg"
+loading="lazy"
+alt="图片7"
+>&lt;/p>
+&lt;h2 id="验证域名所有权">验证域名所有权
+&lt;/h2>&lt;p>添加完成后，按要求解析证书和主机名两个TXT记录，解析生效后10分钟左右即可验证通过，到此这个SaaS域名就正确的添加到了你的zone中并接入了CF。&lt;/p>
+&lt;p>&lt;img src="https://p0.meituan.net/csc/a248f19997493d3ad1f3e269a0d5b46566642.jpg"
+loading="lazy"
+alt="图片8"
+>&lt;/p>
+&lt;p>特别提醒，如图这里CF给出的验证TXT名称是应完整域名的解析记录，所以在自己的第三方DNS配置的时候，填入的主机名应当是example和_cf-custom-hostname.example，如果直接复制框内的内容把根域名b.com填进了主机名全域就变成了example.b.com.b.com了，是错误的。配置完成之后你可以通过直接复制的域名来检查TXT记录是否匹配，推荐MySSL的工具（&lt;a class="link" href="https://myssl.com/dns_check.html#ssl_verify" target="_blank" rel="noopener"
+>点击前往&lt;/a>）。&lt;/p>
+&lt;p>&lt;img src="https://p1.meituan.net/csc/c115c057b2876cd491572e2ef4acda9b50738.png"
+loading="lazy"
+alt="图片9"
+>&lt;/p>
+&lt;p>经过测试，不论以何种方式验证并签发证书，只要保持SSL正确指向CloudFlare，系统就能够在到期前一个月自动为你续期证书，无需进行手动的操作。相应的，SaaS页面Certificate validation method也会变成HTTP Validation。&lt;/p>
+&lt;h2 id="saas域名解析优选域名">SaaS域名解析(优选域名)
+&lt;/h2>&lt;p>CF不会告诉你解析到哪个cname接入，这时候将你接入的SaaS域名cname解析到&lt;a class="link" href="https://blog.qmsdh.com/index.php/archives/22/" target="_blank" rel="noopener"
+>优选域名&lt;/a>即可。&lt;/p>
+&lt;p>此外，对于防火墙规则、页面规则，直接将添加进的域名输入其中即可圈定范围，完成对于其细则的设置。&lt;/p>
+&lt;h2 id="结语">结语
+&lt;/h2>&lt;p>CloudFlare for SaaS是官方提供的一项非常方便的免费功能，弥补了早期未通过Partner接入只能强制NS接入的缺憾。有官方保障、灵活CNAME、免费的优点，也有源站不灵活等缺点，肯定还是不如已经通过Partner/Plesk接入的域名灵活。&lt;/p>
+&lt;p>本文引用文章：&lt;br>
+&lt;a class="link" href="https://luotianyi.vc/6185.html" target="_blank" rel="noopener"
+>https://luotianyi.vc/6185.html&lt;/a>&lt;/p></description></item><item><title>github_actions</title><link>https://www.uder.rocks/p/github_actions/</link><pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/p/github_actions/</guid><description>&lt;hr>
+&lt;h2 id="构建docker镜像">构建Docker镜像
+&lt;/h2>&lt;p>本文介绍了一段GitHub Actions工作流代码，它用于自动构建并推送Docker镜像到DockerHub。该工作流在GitHub仓库中配置，并在触发时执行以下步骤：&lt;/p>
+&lt;ol>
+&lt;li>设置QEMU以支持多架构构建。&lt;/li>
+&lt;li>设置Docker Buildx以便使用高级构建功能。&lt;/li>
+&lt;li>登录到DockerHub。&lt;/li>
+&lt;li>构建并推送Docker镜像到DockerHub。&lt;/li>
+&lt;/ol>
+&lt;h3 id="工作流代码示例">工作流代码示例
+&lt;/h3>&lt;p>以下是工作流的完整代码：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">name: DeployDockerHub
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">on:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> workflow_dispatch:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">jobs:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> docker:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> runs-on: ubuntu-latest
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> steps:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Set up QEMU
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/setup-qemu-action@v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Set up Docker Buildx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/setup-buildx-action@v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Login to DockerHub
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/login-action@v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> username: ${{ secrets.DOCKERHUB_USER }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> password: ${{ secrets.DOCKERHUB_PASS }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Build and push Docker image
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id: docker_build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/build-push-action@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> push: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tags: ${{ secrets.DOCKERHUB_USER }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置说明">配置说明
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>工作流触发&lt;/strong>：使用&lt;code>workflow_dispatch&lt;/code>触发器，可以手动触发工作流。&lt;/li>
+&lt;li>&lt;strong>QEMU设置&lt;/strong>：使用&lt;code>docker/setup-qemu-action@v1&lt;/code>来设置QEMU，以支持多架构构建。&lt;/li>
+&lt;li>&lt;strong>Docker Buildx设置&lt;/strong>：使用&lt;code>docker/setup-buildx-action@v1&lt;/code>来设置Docker Buildx，以便使用其高级构建功能。&lt;/li>
+&lt;li>&lt;strong>DockerHub登录&lt;/strong>：使用&lt;code>docker/login-action@v1&lt;/code>来登录到DockerHub。用户名和密码通过GitHub Secrets传递，确保安全性。&lt;/li>
+&lt;li>&lt;strong>构建并推送Docker镜像&lt;/strong>：使用&lt;code>docker/build-push-action@v2&lt;/code>来构建并推送Docker镜像。镜像的标签通过GitHub Secrets传递，确保灵活性和安全性。&lt;/li>
+&lt;/ol>
+&lt;h3 id="准备工作">准备工作
+&lt;/h3>&lt;p>在使用上述工作流之前，需要进行以下准备工作：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>创建GitHub Secrets&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>DOCKERHUB_USER&lt;/code>：你的DockerHub用户名。&lt;/li>
+&lt;li>&lt;code>DOCKERHUB_PASS&lt;/code>：你的DockerHub密码。&lt;/li>
+&lt;li>&lt;code>DOCKER_IMAGE_NAME&lt;/code>：你希望推送到DockerHub的镜像名称（例如&lt;code>koyeb-python&lt;/code>）。你可以在GitHub仓库的Settings -&amp;gt; Secrets页面添加这些Secrets。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用步骤">使用步骤
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>添加工作流文件&lt;/strong>：在你的GitHub仓库中，创建一个&lt;code>.github/workflows/deploy-to-dockerhub.yml&lt;/code>文件，并将上述代码粘贴到文件中。&lt;/li>
+&lt;li>&lt;strong>配置Secrets&lt;/strong>：按照准备工作中的说明，在GitHub仓库的Settings -&amp;gt; Secrets页面添加必要的Secrets。&lt;/li>
+&lt;li>&lt;strong>手动触发工作流&lt;/strong>：在GitHub仓库的Actions页面，找到这个工作流并手动触发它。&lt;/li>
+&lt;/ol>
+&lt;p>完成以上步骤后，GitHub Actions将自动构建你的Docker镜像并推送到DockerHub&lt;/p>
+&lt;h2 id="github-actions定时推送">GitHub Actions定时推送
+&lt;/h2>&lt;p>本文介绍了一段GitHub Actions工作流代码，它用于自动更新README文件并重新部署到Cloudflare。该工作流可以手动触发或按照计划任务定期触发。&lt;/p>
+&lt;h3 id="工作流代码示例-1">工作流代码示例
+&lt;/h3>&lt;p>以下是工作流的完整代码：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Redeploy&lt;/span> &lt;span class="n">Cloudflare&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">on&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">workflow_dispatch&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">schedule&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">cron&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;*/30 * * * * *&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">jobs&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Redeploy&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Redeploy&lt;/span> &lt;span class="n">Cloudflare&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">runs&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">on&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ubuntu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">steps&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">actions&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">checkout&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">v4&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fetch&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">depth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Renew&lt;/span> &lt;span class="n">README&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">md&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">run&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DATE&lt;/span>&lt;span class="o">=$&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">date&lt;/span> &lt;span class="s2">&amp;#34;+%Y/%m/&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s2"> %H:%M:%S&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">echo&lt;/span> &lt;span class="s2">&amp;#34;${DATE}&amp;#34;&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">README&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">md&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">git&lt;/span> &lt;span class="n">checkout&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">orphan&lt;/span> &lt;span class="n">tmp_work&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">git&lt;/span> &lt;span class="n">branch&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="n">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">echo&lt;/span> &lt;span class="s2">&amp;#34;DATE=${DATE}&amp;#34;&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="n">GITHUB_ENV&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Upload&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">repository&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">stefanzweifel&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">git&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">auto&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">commit&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">action&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">v4&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">16.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">commit_message&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Auto&lt;/span> &lt;span class="n">deploy&lt;/span> &lt;span class="n">by&lt;/span> &lt;span class="n">Github&lt;/span> &lt;span class="n">Actions&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">env&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">DATE&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">create_branch&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="bp">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">branch&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">push_options&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">force&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Delete&lt;/span> &lt;span class="n">old&lt;/span> &lt;span class="n">workflow&lt;/span> &lt;span class="n">runs&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MajorScruffy&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">delete&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">old&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">workflow&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">runs&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">v0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">3.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">env&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">GITHUB_TOKEN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">github&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">token&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repository&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">github&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">repository&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">older&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">than&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">seconds&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">3600&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置说明-1">配置说明
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>工作流触发&lt;/strong>：
+&lt;ul>
+&lt;li>&lt;code>workflow_dispatch&lt;/code>：允许手动触发工作流。&lt;/li>
+&lt;li>&lt;code>schedule&lt;/code>：设置了一个计划任务，每30分钟触发一次（&lt;code>*/30 * * * * *&lt;/code>表示每30分钟执行一次）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>工作流步骤&lt;/strong>：
+&lt;ul>
+&lt;li>&lt;strong>Checkout代码&lt;/strong>：使用&lt;code>actions/checkout@v4.0.0&lt;/code>将仓库的代码检出，&lt;code>fetch-depth: 1&lt;/code>表示只获取最新的提交。&lt;/li>
+&lt;li>&lt;strong>更新README.md&lt;/strong>：获取当前日期和时间，并将其写入README.md文件。使用临时分支&lt;code>tmp_work&lt;/code>，删除&lt;code>main&lt;/code>分支，然后将日期写入环境变量。&lt;/li>
+&lt;li>&lt;strong>上传到仓库&lt;/strong>：使用&lt;code>stefanzweifel/git-auto-commit-action@v4.16.0&lt;/code>自动提交更新，并强制推送到&lt;code>main&lt;/code>分支。&lt;/li>
+&lt;li>&lt;strong>删除旧的工作流运行&lt;/strong>：使用&lt;code>MajorScruffy/delete-old-workflow-runs@v0.3.0&lt;/code>删除超过1小时的旧工作流运行记录，以保持仓库整洁。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="准备工作-1">准备工作
+&lt;/h3>&lt;p>在使用上述工作流之前，需要进行以下准备工作：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>配置GitHub仓库：&lt;/p>
+&lt;ul>
+&lt;li>确保你的GitHub仓库已经设置好，并且你有权限添加和配置GitHub Actions。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>设置GitHub Secrets：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>GITHUB_TOKEN&lt;/code>：GitHub Actions自动生成的token，无需手动设置，代码中已引用&lt;code>${{ github.token }}&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用步骤-1">使用步骤
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>添加工作流文件&lt;/strong>：在你的GitHub仓库中，创建一个&lt;code>.github/workflows/redeploy-cloudflare.yml&lt;/code>文件，并将上述代码粘贴到文件中。&lt;/li>
+&lt;li>&lt;strong>手动触发工作流&lt;/strong>：在GitHub仓库的Actions页面，找到这个工作流并手动触发它，或者等待计划任务自动触发。&lt;/li>
+&lt;/ol>
+&lt;p>完成以上步骤后，GitHub Actions将自动更新README文件，并强制推送到&lt;code>main&lt;/code>分支，同时删除超过1小时的旧工作流运行记录。&lt;/p>
+&lt;h3 id="注意事项">注意事项
+&lt;/h3>&lt;ul>
+&lt;li>请确保计划任务的cron表达式符合你的需求。当前设置为每30分钟触发一次，如果你希望更改频率，可以调整cron表达式。&lt;/li>
+&lt;li>强制推送会覆盖&lt;code>main&lt;/code>分支上的任何更改，请谨慎使用。如果你的仓库有其他协作者，建议提前沟通。&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>转载来源网络&lt;/li>
+&lt;/ul></description></item><item><title>收藏夹</title><link>https://www.uder.rocks/p/stars/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/p/stars/</guid><description>&lt;h1 id="收藏夹汇总">收藏夹汇总
+&lt;/h1>&lt;hr>
+&lt;h2 id="一赛博善人">一、赛博善人：
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="https://github.com/" target="_blank" rel="noopener"
+>github&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.cloudflare.com/" target="_blank" rel="noopener"
+>cloudflare&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://youtube.com/" target="_blank" rel="noopener"
+>youtube&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="二ip测试">二、ip测试：
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="https://ipinfo.io/" target="_blank" rel="noopener"
+>ip信息&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://bgp.he.net/" target="_blank" rel="noopener"
+>asn查询&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.itdog.cn/tcping/" target="_blank" rel="noopener"
+>延迟检测&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.nslookup.io/" target="_blank" rel="noopener"
+>dns记录&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ip.ping0.cc/" target="_blank" rel="noopener"
+>ip欺诈值&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.urlencoder.org/" target="_blank" rel="noopener"
+>encode&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.sioe.cn/xinqing/CIDR.php" target="_blank" rel="noopener"
+>cidr计算&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener"
+>域名状态检查&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ip.sb/" target="_blank" rel="noopener"
+>cf访问检测&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ip.skk.moe/" target="_blank" rel="noopener"
+>全面检测&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.speedtest.net/" target="_blank" rel="noopener"
+>speedtest&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ipdata.co/" target="_blank" rel="noopener"
+>ip地图&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://browserleaks.com/dns" target="_blank" rel="noopener"
+>dns泄露测试&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.itdog.cn/traceroute/" target="_blank" rel="noopener"
+>路由追踪&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.abuseipdb.com/" target="_blank" rel="noopener"
+>滥用检查&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://ping.pe/" target="_blank" rel="noopener"
+>ping&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="三工具">三、工具：
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.uuidgenerator.net/" target="_blank" rel="noopener"
+>uuid&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.atatus.com/tools/sha224-to-hash" target="_blank" rel="noopener"
+>哈希生成&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.urlencoder.org/" target="_blank" rel="noopener"
+>encode&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="tabler:auth-2fa" >2fa&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://bkssl.com/ssl/selfsign" target="_blank" rel="noopener"
+>自签名证书&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://wpw.us.kg/100fasterwithppxguard/base64/" target="_blank" rel="noopener"
+>导航&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="四云服务器">四、云服务器：
+&lt;/h2>&lt;hr>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.ucloud.cn/" target="_blank" rel="noopener"
+>ucloud&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://cn.aliyun.com/" target="_blank" rel="noopener"
+>阿里云&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://evoxt.com/" target="_blank" rel="noopener"
+>希沃斯&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="五域名">五、域名：
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="https://www.namesilo.com/" target="_blank" rel="noopener"
+>namesilo&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://register.us.kg/" target="_blank" rel="noopener"
+>us.kg&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://dynv6.com/" target="_blank" rel="noopener"
+>dynv6&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://wanwang.aliyun.com/newdomain/new_user_activity" target="_blank" rel="noopener"
+>阿里云&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="六其他">六、其他：
+&lt;/h2>&lt;ol>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="" >&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;hr>
+&lt;h2 id="七实用插件汇总名称">七、实用插件汇总（名称）
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>Tampermonkey&lt;/strong>——ID：dhdgffkkebhmkfjojejmpbldmpobfkfo&lt;/li>
+&lt;li>&lt;strong>百度助手&lt;/strong>(沉浸式网络体验，净化网络，去除各种广告)——ID：copeiejfefagfmjndfgbllokphlmalon&lt;/li>
+&lt;li>&lt;strong>超级复制&lt;/strong>——ID：kpdflbfgnadefiffbkefbbnfkojfnlkn&lt;/li>
+&lt;li>&lt;strong>草料二维码&lt;/strong>——ID：moombeodfomdpjnpocobemoiaemednkg&lt;/li>
+&lt;li>&lt;strong>IDM Integration Module&lt;/strong>——ID：ngpampappnmepgilojfohadhhmbhlaek&lt;/li>
+&lt;li>&lt;strong>迅雷下载支持&lt;/strong>——ID：ncennffkjdiamlpmcbajkmaiiiddgioo&lt;/li>
+&lt;li>&lt;strong>Proxy SwitchyOmega&lt;/strong>（管理和切换多个代理设置）——ID：padekgcemlokbadohgkifijomclgjgif&lt;/li>
+&lt;li>&lt;strong>Night Eye&lt;/strong>（任何网站上的黑暗模式）——ID：jpleiggmebgfjnjhljmjpghmpihckicb&lt;/li>
+&lt;li>&lt;strong>万能B站视频下载-哔哩哔哩助手&lt;/strong>——ID：logfjcdnlpmihogdjegekojedhflflnc&lt;/li>
+&lt;li>&lt;strong>彩云小译&lt;/strong> - 网页翻译插件——ID：abbgboelhkajgikdbjclaecchkneaoma&lt;/li>
+&lt;/ol>
+&lt;hr></description></item><item><title>Archives</title><link>https://www.uder.rocks/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/archives/</guid><description/></item><item><title>Links</title><link>https://www.uder.rocks/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/links/</guid><description/></item><item><title>Search</title><link>https://www.uder.rocks/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/search/</guid><description/></item></channel></rss>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Md on 英雄不朽</title><link>https://www.uder.rocks/tags/md/</link><description>Recent content in Md on 英雄不朽</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 18 Sep 2024 19:35:00 +0000</lastBuildDate><atom:link href="https://www.uder.rocks/tags/md/index.xml" rel="self" type="application/rss+xml"/><item><title>示例</title><link>https://www.uder.rocks/p/md-example/</link><pubDate>Wed, 18 Sep 2024 19:35:00 +0000</pubDate><guid>https://www.uder.rocks/p/md-example/</guid><description>&lt;h1 id="一级标题">一级标题
+&lt;/h1>&lt;h2 id="二级标题">二级标题
+&lt;/h2>&lt;p>##二级标题&lt;/p>
+&lt;h3 id="三级标题">三级标题
+&lt;/h3>&lt;p>###三级标题&lt;/p>
+&lt;blockquote>
+&lt;p>大于符号 引用&lt;/p>
+&lt;blockquote>
+&lt;p>继续大于哈哈
+王非王，侯非侯&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h3 id="有序列表">有序列表
+&lt;/h3>&lt;p>把大象放进冰箱：&lt;/p>
+&lt;ol>
+&lt;li>打开冰箱&lt;/li>
+&lt;li>把大象放进去&lt;/li>
+&lt;li>关上冰箱&lt;/li>
+&lt;/ol>
+&lt;h3 id="无序列表">无序列表
+&lt;/h3>&lt;ul>
+&lt;li>短横线&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>星号也行，但是不推荐，因为它会自动两个&lt;/li>
+&lt;/ul>
+&lt;h3 id="取消列表的方式">取消列表的方式
+&lt;/h3>&lt;ol>
+&lt;li>回车 * 2&lt;/li>
+&lt;li>或者回车后backback后退键(不推荐)&lt;/li>
+&lt;/ol>
+&lt;h3 id="任务列表">任务列表
+&lt;/h3>&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> -+空格+方括号+空格(字母x表示勾选上)+方括号+空格&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 吃饭&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 睡觉&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 打豆豆&lt;/li>
+&lt;/ul>
+&lt;h3 id="代码块">代码块
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c" data-lang="c">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="脚注">脚注
+&lt;/h3>&lt;p>一键三连&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;h3 id="上标-下标-高亮">上标 下标 高亮
+&lt;/h3>&lt;p>x^2^ H&lt;del>2&lt;/del>O ==高亮== &lt;strong>加粗&lt;/strong>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=5388716f2ab2526f717f64cb6cb9230d&amp;bvid=BV1WigMemEqi"
+scrolling="no"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/dLDn_k8GmaU"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;iframe src="//player.bilibili.com/player.html?aid=327623069&amp;bvid=BV1JA411h7Gw&amp;cid=171385214&amp;p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> &lt;/iframe>
+&lt;hr>
+&lt;p>&lt;a class="link" href="baidu.com" title="The best search engine for privacy"
+>百度&lt;/a>
+&amp;lt;baidu.com&amp;gt;
+&lt;a class="link" href="#%e4%b8%89%e7%ba%a7%e6%a0%87%e9%a2%98" >标题&lt;/a>
+[百度][id]
+[id]: baidu.com&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>点赞、投币、收藏&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>

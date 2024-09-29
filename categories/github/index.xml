@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on 英雄不朽</title><link>https://www.uder.rocks/categories/github/</link><description>Recent content in Github on 英雄不朽</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 28 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.uder.rocks/categories/github/index.xml" rel="self" type="application/rss+xml"/><item><title>github_actions</title><link>https://www.uder.rocks/p/github_actions/</link><pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/p/github_actions/</guid><description>&lt;hr>
+&lt;h2 id="构建docker镜像">构建Docker镜像
+&lt;/h2>&lt;p>本文介绍了一段GitHub Actions工作流代码，它用于自动构建并推送Docker镜像到DockerHub。该工作流在GitHub仓库中配置，并在触发时执行以下步骤：&lt;/p>
+&lt;ol>
+&lt;li>设置QEMU以支持多架构构建。&lt;/li>
+&lt;li>设置Docker Buildx以便使用高级构建功能。&lt;/li>
+&lt;li>登录到DockerHub。&lt;/li>
+&lt;li>构建并推送Docker镜像到DockerHub。&lt;/li>
+&lt;/ol>
+&lt;h3 id="工作流代码示例">工作流代码示例
+&lt;/h3>&lt;p>以下是工作流的完整代码：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">name: DeployDockerHub
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">on:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> workflow_dispatch:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">jobs:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> docker:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> runs-on: ubuntu-latest
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> steps:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Set up QEMU
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/setup-qemu-action@v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Set up Docker Buildx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/setup-buildx-action@v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Login to DockerHub
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/login-action@v1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> username: ${{ secrets.DOCKERHUB_USER }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> password: ${{ secrets.DOCKERHUB_PASS }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - name: Build and push Docker image
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> id: docker_build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> uses: docker/build-push-action@v2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> with:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> push: true
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tags: ${{ secrets.DOCKERHUB_USER }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置说明">配置说明
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>工作流触发&lt;/strong>：使用&lt;code>workflow_dispatch&lt;/code>触发器，可以手动触发工作流。&lt;/li>
+&lt;li>&lt;strong>QEMU设置&lt;/strong>：使用&lt;code>docker/setup-qemu-action@v1&lt;/code>来设置QEMU，以支持多架构构建。&lt;/li>
+&lt;li>&lt;strong>Docker Buildx设置&lt;/strong>：使用&lt;code>docker/setup-buildx-action@v1&lt;/code>来设置Docker Buildx，以便使用其高级构建功能。&lt;/li>
+&lt;li>&lt;strong>DockerHub登录&lt;/strong>：使用&lt;code>docker/login-action@v1&lt;/code>来登录到DockerHub。用户名和密码通过GitHub Secrets传递，确保安全性。&lt;/li>
+&lt;li>&lt;strong>构建并推送Docker镜像&lt;/strong>：使用&lt;code>docker/build-push-action@v2&lt;/code>来构建并推送Docker镜像。镜像的标签通过GitHub Secrets传递，确保灵活性和安全性。&lt;/li>
+&lt;/ol>
+&lt;h3 id="准备工作">准备工作
+&lt;/h3>&lt;p>在使用上述工作流之前，需要进行以下准备工作：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>创建GitHub Secrets&lt;/strong>：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>DOCKERHUB_USER&lt;/code>：你的DockerHub用户名。&lt;/li>
+&lt;li>&lt;code>DOCKERHUB_PASS&lt;/code>：你的DockerHub密码。&lt;/li>
+&lt;li>&lt;code>DOCKER_IMAGE_NAME&lt;/code>：你希望推送到DockerHub的镜像名称（例如&lt;code>koyeb-python&lt;/code>）。你可以在GitHub仓库的Settings -&amp;gt; Secrets页面添加这些Secrets。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用步骤">使用步骤
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>添加工作流文件&lt;/strong>：在你的GitHub仓库中，创建一个&lt;code>.github/workflows/deploy-to-dockerhub.yml&lt;/code>文件，并将上述代码粘贴到文件中。&lt;/li>
+&lt;li>&lt;strong>配置Secrets&lt;/strong>：按照准备工作中的说明，在GitHub仓库的Settings -&amp;gt; Secrets页面添加必要的Secrets。&lt;/li>
+&lt;li>&lt;strong>手动触发工作流&lt;/strong>：在GitHub仓库的Actions页面，找到这个工作流并手动触发它。&lt;/li>
+&lt;/ol>
+&lt;p>完成以上步骤后，GitHub Actions将自动构建你的Docker镜像并推送到DockerHub&lt;/p>
+&lt;h2 id="github-actions定时推送">GitHub Actions定时推送
+&lt;/h2>&lt;p>本文介绍了一段GitHub Actions工作流代码，它用于自动更新README文件并重新部署到Cloudflare。该工作流可以手动触发或按照计划任务定期触发。&lt;/p>
+&lt;h3 id="工作流代码示例-1">工作流代码示例
+&lt;/h3>&lt;p>以下是工作流的完整代码：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Redeploy&lt;/span> &lt;span class="n">Cloudflare&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">on&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">workflow_dispatch&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">schedule&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">cron&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;*/30 * * * * *&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">jobs&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Redeploy&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Redeploy&lt;/span> &lt;span class="n">Cloudflare&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">runs&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">on&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ubuntu&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">steps&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">actions&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">checkout&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">v4&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">0.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fetch&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">depth&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Renew&lt;/span> &lt;span class="n">README&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">md&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">run&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">DATE&lt;/span>&lt;span class="o">=$&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">date&lt;/span> &lt;span class="s2">&amp;#34;+%Y/%m/&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s2"> %H:%M:%S&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">echo&lt;/span> &lt;span class="s2">&amp;#34;${DATE}&amp;#34;&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">README&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">md&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">git&lt;/span> &lt;span class="n">checkout&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">orphan&lt;/span> &lt;span class="n">tmp_work&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">git&lt;/span> &lt;span class="n">branch&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="n">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">echo&lt;/span> &lt;span class="s2">&amp;#34;DATE=${DATE}&amp;#34;&lt;/span> &lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="n">GITHUB_ENV&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Upload&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">repository&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">stefanzweifel&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">git&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">auto&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">commit&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">action&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">v4&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">16.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">commit_message&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Auto&lt;/span> &lt;span class="n">deploy&lt;/span> &lt;span class="n">by&lt;/span> &lt;span class="n">Github&lt;/span> &lt;span class="n">Actions&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">env&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">DATE&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">create_branch&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="bp">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">branch&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">push_options&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">force&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Delete&lt;/span> &lt;span class="n">old&lt;/span> &lt;span class="n">workflow&lt;/span> &lt;span class="n">runs&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">uses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">MajorScruffy&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">delete&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">old&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">workflow&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">runs&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">v0&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="mf">3.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">env&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">GITHUB_TOKEN&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">github&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">token&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">with&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">repository&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">$&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="n">github&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">repository&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">older&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">than&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">seconds&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">3600&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置说明-1">配置说明
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>工作流触发&lt;/strong>：
+&lt;ul>
+&lt;li>&lt;code>workflow_dispatch&lt;/code>：允许手动触发工作流。&lt;/li>
+&lt;li>&lt;code>schedule&lt;/code>：设置了一个计划任务，每30分钟触发一次（&lt;code>*/30 * * * * *&lt;/code>表示每30分钟执行一次）。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>工作流步骤&lt;/strong>：
+&lt;ul>
+&lt;li>&lt;strong>Checkout代码&lt;/strong>：使用&lt;code>actions/checkout@v4.0.0&lt;/code>将仓库的代码检出，&lt;code>fetch-depth: 1&lt;/code>表示只获取最新的提交。&lt;/li>
+&lt;li>&lt;strong>更新README.md&lt;/strong>：获取当前日期和时间，并将其写入README.md文件。使用临时分支&lt;code>tmp_work&lt;/code>，删除&lt;code>main&lt;/code>分支，然后将日期写入环境变量。&lt;/li>
+&lt;li>&lt;strong>上传到仓库&lt;/strong>：使用&lt;code>stefanzweifel/git-auto-commit-action@v4.16.0&lt;/code>自动提交更新，并强制推送到&lt;code>main&lt;/code>分支。&lt;/li>
+&lt;li>&lt;strong>删除旧的工作流运行&lt;/strong>：使用&lt;code>MajorScruffy/delete-old-workflow-runs@v0.3.0&lt;/code>删除超过1小时的旧工作流运行记录，以保持仓库整洁。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="准备工作-1">准备工作
+&lt;/h3>&lt;p>在使用上述工作流之前，需要进行以下准备工作：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>配置GitHub仓库：&lt;/p>
+&lt;ul>
+&lt;li>确保你的GitHub仓库已经设置好，并且你有权限添加和配置GitHub Actions。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>设置GitHub Secrets：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>GITHUB_TOKEN&lt;/code>：GitHub Actions自动生成的token，无需手动设置，代码中已引用&lt;code>${{ github.token }}&lt;/code>。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="使用步骤-1">使用步骤
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>添加工作流文件&lt;/strong>：在你的GitHub仓库中，创建一个&lt;code>.github/workflows/redeploy-cloudflare.yml&lt;/code>文件，并将上述代码粘贴到文件中。&lt;/li>
+&lt;li>&lt;strong>手动触发工作流&lt;/strong>：在GitHub仓库的Actions页面，找到这个工作流并手动触发它，或者等待计划任务自动触发。&lt;/li>
+&lt;/ol>
+&lt;p>完成以上步骤后，GitHub Actions将自动更新README文件，并强制推送到&lt;code>main&lt;/code>分支，同时删除超过1小时的旧工作流运行记录。&lt;/p>
+&lt;h3 id="注意事项">注意事项
+&lt;/h3>&lt;ul>
+&lt;li>请确保计划任务的cron表达式符合你的需求。当前设置为每30分钟触发一次，如果你希望更改频率，可以调整cron表达式。&lt;/li>
+&lt;li>强制推送会覆盖&lt;code>main&lt;/code>分支上的任何更改，请谨慎使用。如果你的仓库有其他协作者，建议提前沟通。&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>转载来源网络&lt;/li>
+&lt;/ul></description></item></channel></rss>
