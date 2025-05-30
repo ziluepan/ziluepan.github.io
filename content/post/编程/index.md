@@ -38,3 +38,6 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 
 - 检查是否安装成功： node -v 查看node的版本、npm -v 查看npm的版本
+
+#python
+
