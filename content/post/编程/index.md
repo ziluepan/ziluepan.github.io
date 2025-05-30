@@ -4,9 +4,9 @@ description: 编程基本
 slug: codex
 date: 2025-05-27 19:35:00+0000
 categories:
-    - 使用教程
+    - code
 tags:
-    - md
+    - code
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
