@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Code on 英雄不朽</title><link>https://www.uder.rocks/tags/code/</link><description>Recent content in Code on 英雄不朽</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 23 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.uder.rocks/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>codex</title><link>https://www.uder.rocks/p/codex/</link><pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate><guid>https://www.uder.rocks/p/codex/</guid><description>&lt;h1 id="nodejs">node.js
+&lt;/h1>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- nvm install &amp;lt;version&amp;gt;：安装指定版本的 Node.js。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- nvm use &amp;lt;version&amp;gt;：切换到指定版本的 Node.js。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- nvm ls：列出已安装的所有 Node.js 版本。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- nvm alias &amp;lt;name&amp;gt; &amp;lt;version&amp;gt;：给指定版本创建别名。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- nvm run &amp;lt;version&amp;gt; &amp;lt;script&amp;gt;：在指定版本下运行脚本。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- nvm current：显示当前正在使用的 Node.js 版本。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- nvm uninstall &amp;lt;version&amp;gt;：卸载指定版本的 Node.js。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>通过nvm安装node
+查看node.js最新的一批版本(版本号：偶数是绝对稳定版本 基数是不一定稳定版本)
+&lt;code>nvm list available&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>安装指定的版本：nvm install 10.23.0&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>查看安装的所有版本：nvm list 或 nvm ls&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>进入或切换版本：nvm use 18.15.0&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>安装成功后会成对应的文件夹，nvm文件夹下&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>检查是否安装成功： node -v 查看node的版本、npm -v 查看npm的版本&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
