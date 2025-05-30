@@ -10,21 +10,21 @@ weight: 3
 
 
 
-#node.js
-
+# node.js
+```
 - nvm install <version>：安装指定版本的 Node.js。
 - nvm use <version>：切换到指定版本的 Node.js。
-- nvm ls：列出已安装的所有 Node.js 版本。Add commentMore actions
+- nvm ls：列出已安装的所有 Node.js 版本。
 - nvm alias <name> <version>：给指定版本创建别名。
 - nvm run <version> <script>：在指定版本下运行脚本。
 - nvm current：显示当前正在使用的 Node.js 版本。
 - nvm uninstall <version>：卸载指定版本的 Node.js。
-
+```
 
 
 通过nvm安装node
 查看node.js最新的一批版本(版本号：偶数是绝对稳定版本 基数是不一定稳定版本)
--nvm list available
+`nvm list available`
 
 
 - 安装指定的版本：nvm install 10.23.0
